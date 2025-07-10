@@ -3,30 +3,8 @@ function applyButton(){
     window.location.href=("register.html")
 }
 
-/*TOGGLING*/
-var nav = document.querySelector("#nav")
-let cover  = document.querySelector("#cover")
-let button  = document.querySelector("#button")
-let check= document.querySelector(".swiper")
-let check1  = document.querySelector(".check")
 
-function Toggle(){
-     
-    nav.classList.add("active")
 
-if(screen.width <= 500){
-    cover.style.display = "none"
-    button.style.visibility ="hidden"
-   
-}else{
-    cover.style.display = "flex"
-}
-}
-function Close(){
-    nav.classList.remove("active")
-    cover.style.display = "flex"
-    
-}
 //form validation
 function validateForm(event) {
     let name = document.forms["myForm"]["name"].value;
