@@ -1,0 +1,44 @@
+ 
+
+
+    <html>
+        <head>
+        <link rel="stylesheet" href="preschool.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Registration</title>
+    </head> 
+    <body>
+        <div class="register_container">
+    <div class="form">
+    <h2>Enroll your child</h2>
+    <form name ="myForm" action='preschool.php' method="POST" onsubmit="validateForm(event)" >
+        <label>Name</label>
+        <br>
+        <input type="text"  placeholder="name and surname" name="name">
+        <br>
+      <label>Date of birth</label>
+        <br>
+        <input type="date" name="DOB">
+        <br>
+        <label>Age</label>
+        <br>
+        <input type="number" name="age" placeholder="age"> 
+      
+        <br>
+        <label>Email</label><br>
+        <input type="email" placeholder="email" name="email" >
+        <br>
+        <label>Birth certificate</label>
+        <br>
+        <input type="file" name="bcert" >
+  
+        <br>
+        <input type="submit" value="Send">
+
+    </form>
+    
+    </div>
+    </div>
+    </body>
+    <script src="preschool.js"></script>
+    </html>

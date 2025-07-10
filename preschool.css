@@ -1,0 +1,279 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   background-color: rgb(209, 209, 10);
+    
+    height: 100px;
+    background-size: cover;
+    background-position: right;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.cont{
+    background-image: url(./images/animate.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: inherit;
+    
+}
+/*Navigation begin*/
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    margin-right: 0.5rem;
+}
+nav h1{
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+nav h1:hover{
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav a:hover{
+    border: 2px solid white;
+    width:120px;
+    height:120px ;
+    border-radius: 10px;
+}
+/*Navigation end*/
+
+/*close */
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 53
+  }
+  #close{
+    display: none;
+  }
+  /*close close*/
+
+
+/*Navigation bar*/
+#button{
+    margin-right: 0.5rem;
+    top:0;
+    right: 0.5rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+
+    padding: 2rem;
+    
+  }
+ 
+  .bar{
+    width: 100%;
+    height:3px ;
+    background-color:maroon;
+    border-radius: 10px;
+  }
+/*Navigation bar close*/
+
+
+h2{
+    text-align: center;
+    color: blue;
+}
+.second{
+    background-image: url(./images/smiling\ kid.jpg);
+    
+    background-size: cover;
+    height:100%;
+    background-position: right;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    margin-bottom: 2rem;
+    
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.third section{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    width: 200px;
+    padding-left: 1rem;
+}
+.third section:nth-child(1){
+    background-color: red;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 10px;
+}
+.third section:nth-child(2){
+    background-color:green;
+     padding: 1rem;
+    text-align: left;
+      border-radius: 10px;
+}
+.third section:nth-child(3){
+    background-color:purple;
+     padding: 1rem;
+    text-align: left;
+      border-radius: 10px;
+}
+
+.fourth{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.register_container{
+   
+    background-image: url(./images/kid\ with\ teacher2.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.form form{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: auto;
+   
+    background-color: #262686;
+    align-items: center;
+    
+    
+}
+.form label{
+    margin-left: 0.5rem;
+}
+.form input[type=text]{
+color:rgb(156, 101, 111);
+margin-bottom: 0.5rem;
+margin-left: 1rem;
+height: 40px;
+width: 60%;
+
+}
+.form input[type=number]{
+    width: 40%;
+
+}
+.form input[type=file]{
+margin-left: 1rem;
+}
+.form input[type=email]{
+    margin-left: 1rem;
+    width: 60%;
+}
+.form input[type=date]{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    width: 40%;
+    height: 40px;
+}
+.form input[type=submit]{
+    margin-left: 1rem;
+    background-color: grey;
+    text-align: center;
+    margin-top: 0.3rem;
+    width: 60px;
+    height:30px ;
+    }
+.form input[type=submit]:hover{
+    background-color: rgb(0, 19, 128);
+}
+
+
+.form input[type=number]{
+    height: 50px;
+    margin-left: 1rem;
+}
+.cover_button{
+    position: absolute;
+    left: 50%;
+    top: 63%;
+    transform: translateX(-50%);
+    background-color: yellow;
+    border: none;
+   
+    border-radius: 1rem;
+   
+    font-size: 24px;
+    padding: 1rem;
+
+}
+.cover_button a{
+    text-align: left;
+}
+.cover_button:hover{
+    background-color: rgb(95, 95, 24);
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width:700px){
+nav ul{
+    gap: 4px;
+}
+
+}
+@media only screen and (max-width:500px) {
+    
+
+   
+    
+   
+     
+      
+      #button{
+        display: flex;
+    }
+  .prices{
+    
+    flex-direction: column;
+    text-align: center;
+  } 
+}
+@media only screen and (max-width:425px){
+    .second{
+        height: 80%;
+    }
+    nav h1{
+        font-size: 16px;
+    }
+    .third{
+       flex-direction: column;
+       text-align: center;
+       align-items: center;
+       
+    }
+    .third section{
+        margin-bottom: 10px;
+    }
+}
