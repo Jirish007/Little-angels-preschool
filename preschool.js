@@ -4,7 +4,7 @@ function applyButton(){
 }
 
 
-
+//hjhj
 //form validation
 function validateForm(event) {
     let name = document.forms["myForm"]["name"].value;
